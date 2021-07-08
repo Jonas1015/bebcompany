@@ -1,0 +1,71 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<div class="text-pageheader">
+				<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.0s">
+					CONTACT US
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</header>
+<!-- CONTENT =============================-->
+<section class="item content">
+	<div class="container toparea">
+		<div class="underlined-title">
+			<div class="editContent">
+				<h1 class="text-center latestitems">Get in Touch</h1>
+			</div>
+			<div class="wow-hr type_short">
+				<span class="wow-hr-h">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-7 map-col">
+				<h2><i class="fa fa-compass" aria-hidden="true"></i></h2>
+				<div class="location">
+						<!-- <h1><i class="fa fa-map-marker" aria-hidden="true"></i></h1> -->
+						<h4>2nd Floor TanHouse, Ursino street</h4>
+						<h4>Bagamoyo Rd, Dar-es-salaam</h4>
+						<h4>112745, Samora AV</h4>
+						<h5><i class="fa fa-phone"></i> &nbsp Call our office: +234567890865 </h5>
+				</div>
+				<div class="myMap mb-5">
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe width="515" height="276" id="gmap_canvas" src="https://maps.google.com/maps?q=kigamboni%20Dar%20es%20Sa&t=k&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<!-- <br><a href="https://fmovies2.org">fmovies</a><br> -->
+							<!-- <a href="https://www.embedgooglemap.net">google maps html code</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="done">
+					<div class="alert alert-success">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						Your message has been sent. Thank you!
+					</div>
+				</div>
+				<form method="post" action="contact.php" id="contactform">
+					<div class="form">
+						<input type="text" name="name" placeholder="Your Name *">
+						<input type="text" name="email" placeholder="Your E-mail Address *">
+						<textarea name="comment" rows="7" placeholder="Type your Message *"></textarea>
+						<input type="submit" id="submit" class="clearfix btn" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- CALL TO ACTION =============================-->
+{% endblock content %}

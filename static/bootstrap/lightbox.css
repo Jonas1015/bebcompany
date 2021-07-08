@@ -1,0 +1,16 @@
+.gallery {
+	margin: 2vh 2% 2vh 8%;
+}
+
+.gallery img {
+	width: 200px;
+	height: 210px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}

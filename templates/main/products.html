@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+		<link href="{% static 'fontawesome/css/all.min.css' %}" rel="stylesheet">
+		<link href="{% static 'bootstrap/css/lightbox.min.css' %}" rel="stylesheet">
+		<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+		<link href="{% static 'bootstrap/lightbox.css' %}" rel="stylesheet">
+		<link href="{% static 'bootstrap/css/w3.css' %}" rel="stylesheet">
+		<link href="{% static 'productPage/css/styles.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>BEB Comapny LTD</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Navigate &nbsp <i class="fa fa-table"></i></a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="{% url 'home' %}">Home &nbsp <i class="fa fa-home"></i></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">About Us &nbsp <i class="fa fa-book"></i></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}">Contact &nbsp <i class="fa fa-phone"></i></a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="#">Contact</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+					<button type="button" id="sidebarCollapse" class="navbar-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+            <nav class="navbar navbar-expand-lg text-center">
+								<h2>VIEW OUR PRODUCTS GALLERY</h2>
+								<!-- <div class="container-fluid d-flex">
+									<div class="collapse navbar-collapse" id="navbarSupportedContent">
+										<ul class="nav navbar-nav ml-5">
+											<li class="nav-item active">
+												<a class="nav-link" href="#">Page</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Page</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Page</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#">Page</a>
+											</li>
+										</ul>
+									</div>
+									<button data-target="#navbarSupportedContent" data-toggle="collapse" class="navbar-toggle" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<i class="fa fa-bars"></i>
+										<span class="sr-only">Toggle navigation</span>
+									</button>
+								</div> -->
+            </nav>
+
+						<div class="gallery row">
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+									<img src="{% static 'images2/1-small.jpg' %}" alt="">
+									<div class="details">
+										<a href="{% static 'images2/Large/1.jpg' %}" data-lightbox="mygallery">
+											<i class="fa fa-search-plus"></i>
+										</a>
+									</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/2-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/2.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/3-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/3.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/4-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/4.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/5-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/5.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/6-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/6.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/7-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/7.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/8-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/8.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/9-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/9.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+							<div class="image col-md-3 col-sm-6 col-xs-6 col-lg-3">
+								<img src="{% static 'images2/10-small.jpg' %}" alt="">
+								<div class="details">
+									<a href="{% static 'images2/Large/10.jpg' %}" data-lightbox="mygallery">
+										<i class="fa fa-search-plus"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+				</div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+		<script src="{% static 'bootstrap/js/jquery-.js' %}"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- Popper.JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap JS -->
+		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'bootstrap/js/lightbox-plus-jquery.min.js' %}"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

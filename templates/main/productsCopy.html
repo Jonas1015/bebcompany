@@ -1,0 +1,90 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block css %}
+	<link href="{% static 'fontawesome/css/lightbox.min.css' %}" rel="stylesheet">
+	<link href="{% static 'bootstrap/lightbox.css' %}" rel="stylesheet">
+{% endblock css %}
+
+{% block content %}
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="text-pageheader">
+					<div class="subtext-image" data-scrollreveal="enter bottom over 1.2s after 0.3s">
+						 OUR PRODUCTS
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
+
+<!-- CONTENT =============================-->
+<section class="item content">
+	<div class="container toparea">
+		<div class="underlined-title">
+			<div class="editContent">
+				<h1 class="text-center latestitems">Awesome Product</h1>
+			</div>
+
+			<div class="boxes">
+				<div class="box">
+					<div class="image">
+						<img src="{% static 'images2/Large/1.jpg' %}">
+					</div>
+				</div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+				<div class="box"></div>
+			</div>
+
+			<div class="gallery">
+				<a href="{% static 'images2/Large/1.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/1-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/2.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/2-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/3.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/3-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/4.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/4-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/5.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/5-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/6.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/6-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/7.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/7-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/8.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/8-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/9.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/9-small.jpg' %}" alt="">
+				</a>
+				<a href="{% static 'images2/Large/10.jpg' %}" data-lightbox="mygallery">
+						<img src="{% static 'images2/10-small.jpg' %}" alt="">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
+
+{% block js %}
+	<script src="{% static 'bootstrap/js/lightbox-plus-jquery.min.js' %}"></script>
+{% endblock js %}
